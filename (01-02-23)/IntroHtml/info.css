@@ -192,8 +192,44 @@ html {
     margin: 0px 0px 0px 30px;
 }
 
-#Footer {
-    background-color: gray;
+#Footer div {
+    background-color: #020022d4;
     width: 100%;
+    color: white;
+    /* text-decoration: none; */
     height: 300px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+#Footer .first_foot ul h1 {
+    margin: 10px 10px;
+}
+
+#Footer .first_foot ul li {
+    margin: 10px 20px;
+}
+
+#Footer .first_foot ul li i {
+    margin: 0px 10px;
+}
+
+#Footer .first_foot ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#Footer div ul address {
+    margin: 0px 0px 0px 20px;
+}
+
+#Footer div ul li iframe{
+    width: 467px;
+    height: 244px;
+} 
+
+#Footer div ul {
+    list-style-type: none;
 }
