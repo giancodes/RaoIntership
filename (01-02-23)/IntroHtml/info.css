@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #Home {
     width: 100%;
     position: fixed;
@@ -22,11 +26,12 @@
 }
 
 #Home .Heading h1 {
-    transition: 2s;
+    transition: .6s;
 }
 
 #Home .Heading h1:hover {
-    text-decoration: underline;
+    color: gray;
+    font-weight: bold;
 }
 
 #Home .Links {
@@ -36,15 +41,13 @@
 
 #Home .Links a {
     margin: 5px;
-    color: gray;
+    color: black;
     text-decoration: none;
-    transition: .10s;
+    transition: .5s;
 }
 
 #Home .Links a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-
+    color: gray;
 }
 
 #main_body #body .Home_image {
@@ -65,28 +68,130 @@
     padding: 10px 20px 0px;
 }
 
-#Languages{
+#Languages {
     width: 100%;
 }
 
-#Languages .row{
+#Languages h1 {
+    padding: 0% 5%;
+}
+
+#Languages .row {
+    border-bottom: 1px solid black;
     width: 90%;
     margin: 0px 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#Languages .row .col1 img{
-    width: 300px;
-    padding: 30px;
-    margin: 5px 0px;
+
+#Languages .row .col h3 {
+    padding: 40px 50px 0px;
+    margin: 10px 30px;
 }
-#Languages .row .col2 p{
+
+#Languages .row:nth-child(odd) .col h3 {
+    float: right;
+}
+
+#Languages .row:nth-child(even) .col h3 {
+    float: left;
+}
+
+#Languages .row .col p {
+    display: block;
     width: 90%;
     overflow: auto;
+    padding: 30px 10px;
     margin: 0px 10px 0px 30px;
     line-height: 30px;
 }
+
+#Languages .row:nth-child(even) .col p img {
+    float: right;
+}
+
+#Languages .row:nth-child(odd) .col p img {
+    float: left;
+}
+
+#Languages .row .col p img {
+    display: block;
+    width: 165px;
+    padding: 0px 30px;
+    margin: 0px 0px;
+}
+
+#contact_us {
+    margin: 10px 70px;
+    width: 90%;
+    display: flex;
+}
+
+
+#contact_us .form {
+    display: block;
+    width: 100%;
+    margin: 30px;
+    padding: 20px;
+}
+
+#contact_us .form form .info {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
+
+#contact_us .form form .info div {
+    width: 100%;
+    margin: 0px 30px 0px 0px;
+}
+
+#contact_us .form form .stuff,
+.info {
+    margin: 20px;
+}
+
+#contact_us .form form .stuff textarea {
+    width: 100%;
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#contact_us .form form .stuff textarea:hover {
+    background-color: rgba(204, 191, 175, 0.568);
+}
+
+
+.heading {
+    margin: 10px 60px;
+    width: auto;
+}
+
+#contact_us .form form label {
+    display: block;
+    padding: 2px 10px;
+}
+
+#contact_us .form form input {
+    margin: 5px 10px;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#contact_us .form form input:hover {
+    background-color: rgba(204, 191, 175, 0.568);
+}
+
+#contact_us .form form button {
+    width: 95%;
+    padding: 10px;
+    margin: 0px 0px 0px 30px;
+}
+
 #Footer {
     background-color: gray;
     width: 100%;
