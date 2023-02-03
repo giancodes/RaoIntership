@@ -1,13 +1,35 @@
 * {
     margin: 0px;
     padding: 0px;
-    width: 100%;
     font-style: normal;
 }
 
 .flex-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    height: 40%;
     display: flex;
-    width: 100%;
     flex-flow: row wrap;
-    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px 50px; 
+}
+
+.flex-items {
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.flex-items:nth-child(even) {
+    flex: 1;
+}
+
+.flex-items:nth-child(odd) {
+    flex: 1;
 }
