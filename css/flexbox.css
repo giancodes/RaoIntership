@@ -5,31 +5,43 @@
 }
 
 .flex-container {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: auto;
-    height: 100%;
-    padding: 10px;
-    height: 40%;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0px 50px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    background-color: aqua;
 }
 
-.flex-items {
-    width: 100%;
-    border: 1px solid black;
+button {
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    background-color: rgba(255, 2255, 255, 0.5);
+    padding: 100px;
+    margin: 50px;
+    font-size: 100px;
+    color: aliceblue;
+    border: 1px solid white;
+    box-shadow: 10px 5px 10px #7272727d ;
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#Num_disp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    background-color: rgb(0, 255, 255);
+}
+#Num_disp div{
+    text-align: center;
+    flex: 1;
+    background-color: rgba(255, 2255, 255, 0.5);
+    padding: 20px;
     margin: 10px;
-    flex-shrink: 0;
-    border-radius: 10px;
-}
-
-.flex-items:nth-child(even) {
-    flex: 1;
-}
-
-.flex-items:nth-child(odd) {
-    flex: 1;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    box-shadow: 10px 5px 10px #7272727d ;
+    -webkit-backdrop-filter: blur(10px);
 }
