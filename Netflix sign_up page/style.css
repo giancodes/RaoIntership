@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/862cc171-8df5-418c-886f-2aaf767ae159/2e1414e3-cdae-473f-af07-31f9b74741f6/IN-en-20230130-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+}
+
+.body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.body .back_bone {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.body .heading img {
+    max-width: 166.5px;
+    max-height: 45px;
+    padding: 10px;
+    margin: 13px 31px;
+}
+
+.body .main_box {
+    width: 28%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.body .main_box form {
+    margin: 0px 30px;
+}
+
+.body .main_box form h1 {
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    margin: 15px 0px;
+}
+
+.body .main_box form .inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0px;
+    margin: 0px;
+}
+
+.body .main_box form .inputs input {
+    color: white;
+    background-color: #333;
+    padding: 14px 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+::placeholder {
+
+    font-size: 16px;
+}
+
+.body .main_box form .btn {
+    margin: 17px 0px 10px 0px;
+}
+
+.body .main_box form .btn button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #e50914;
+    border-radius: 8px;
+}
+
+.body .main_box form .checking {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.body .main_box form .checking div:nth-child(1) label {
+    color: rgb(211, 208, 208);
+    font-size: 13px;
+}
+
+.body .main_box form .checking div:nth-child(1) input[type="checkbox"] {
+    appearance: none;
+    background-color: #9E9E9E;
+    opacity: 0.7;
+    padding: 10px;
+    padding: 7px;
+    border-radius: 2px;
+    margin: 0px 3px 0px 12px;
+}
+
+.body .main_box form .checking div:nth-child(2) a {
+    color: #7a7575;
+    text-decoration: none;
+}
+
+.body .main_box form .texts {
+    margin: 100px 0px 0px 5px;
+}
+
+.body .main_box form .texts p:nth-child(1) {
+    color: gray;
+    font-size: 14px;
+    text-align: left;
+}
+
+.body .main_box form .texts p:nth-child(1) a {
+    color: white;
+    text-decoration: none;
+}
+
+.body .main_box form .texts p:nth-child(2) a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.body .main_box form .texts p:nth-child(2) {
+    color: rgb(211, 208, 208);
+    font-size: 13px;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+.footer {
+    margin: 100px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 20px 10%;
+}
+
+.footer .footer_heading div:nth-child(1) p{
+
+}
