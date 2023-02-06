@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/netflix-3521600-2945044.png"
         type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Netflix Dummy</title>
 </head>
@@ -30,7 +30,7 @@
                             <button>Sign In</button>
                         </div>
                         <div class="checking">
-                            <div>
+                            <div class="check">
                                 <input type="checkbox" name="RME" id="Rme"><label for="rm">Remember me</label>
                             </div>
                             <div>
@@ -48,21 +48,44 @@
             <div class="footer">
                 <div class="footer_heading">
                     <div>
-                        <p>Questions? Call 000-800-919-1694</p>
+                        <p>Questions? Call<a href="#"> 000-800-919-1694</a></p>
                     </div>
                     <div>
-                        <p>FAQ</p>
-                        <p>Help Centre</p>
-                        <p>Terms of Use</p>
-                        <p>Privacy</p>
-                        <p>Cookie Preferences</p>
-                        <p>Corporate Information</p>
+                        <ul>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Help Centre</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookie information</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                        </ul>
                     </div>
                     <div>
-                        <select name="language">
-                            <option value="English"></option>
-                            <option value="hindi"></option>
-                        </select>
+                        <div class="select_group">
+                            <i class="fa-solid fa-language"></i>
+                            <select name="language">
+                                <option value="fa-solid fa-language"> English</option>
+                                <option value="fa-solid fa-language"> hindi</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
