@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            position: relative;
+            margin: 10px;
+        }
+
+        img.image {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .content {
+            position: absolute;
+            margin: 0px 10px;
+            top: 70px;
+            left: 0;
+        }
+
+        .content h2 {
+            color: white;
+        }
+
+        .play {
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            color: white;
+            margin: 0px;
+        }
+
+        .seconde {
+            position: relative;
+            margin: 100px;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            /* justify-content: center; */
+            flex-flow: wrap row;
+            margin: 0px 100px;
+        }
+
+        .container div.first-0 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container div.first-0 .first-1 img {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            margin: 0px 10px;
+        }
+
+        .container div.first-0 .first-1 .content_sec {
+            width: 300px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            border-top-right-radius: 10px;
+        }
+
+        .container div.first,
+        .container div.first-0 .first-1 {
+            border: 10px;
+            position: relative;
+        }
+
+        .container div.first img {
+            border-radius: 10px;
+        }
+
+        .w-500 {
+            width: 500px;
+        }
+
+        .first .content_sec {
+            width: 500px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            border-top-right-radius: 10px;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer p {
+            color: black;
+        }
+
+        .footer a {
+            color: blue;
+            font-size: 13px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-1">
+        <img src="./flower.jpg" class="image" alt="">
+        <div class="play">
+            <p>PLAY VIDEO</p>
+        </div>
+        <div class="content">
+            <h2>MOBILITY <br> YOUR <br> MARITIME <br>PARTNER</h2>
+        </div>
+    </div>
+    <center>
+        <div class="container">
+            <div class="first">
+                <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg"
+                    style="width: 700px; height: 500px;">
+                <div class="content_sec " style="widht: 500px;">
+                    <div class="txt">
+                        <h3> Hello Hello Hello Hello Hello Hello Hello </h3>
+                    </div>
+                    <div class="footer">
+                        <p>BLOG | 14 Aug 2019</p>
+                        <a href="">DISCOVER MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="first-0">
+                <div class="first-1">
+                    <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg">
+                    <div class="content_sec">
+                        <div class="txt">
+                            <h3> Hello Hello Hello Hello Hello Hello Hello </h3>
+                        </div>
+                        <div class="footer">
+                            <p>BLOG | 13 Aug 2019</p>
+                            <a href="">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-1">
+                    <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg">
+                    <div class="content_sec">
+                        <div class="txt">
+                            <h3> Hello Hello Hello Hello Hello Hello Hello </h3>
+                        </div>
+                        <div class="footer">
+                            <p>BLOG | 13 Aug 2019</p>
+                            <a href="">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
