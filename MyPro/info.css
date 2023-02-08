@@ -12,8 +12,8 @@ html {
 
 #Home {
     width: 100%;
-    position: fixed;
-    background-color: aliceblue;
+    position: fixed;    
+    background-color: rgb(247, 240, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
