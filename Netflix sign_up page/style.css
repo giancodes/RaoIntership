@@ -85,8 +85,10 @@ body {
     border-radius: 8px;
 }
 
-.body .main_box form .checking {
+.body .main_box form .checking,
+.body .main_box form .checking .check {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-size: 15px;
 }
@@ -97,13 +99,32 @@ body {
 }
 
 .body .main_box form .checking div:nth-child(1) input[type="checkbox"] {
+    display: grid;
+    place-content: center;
     appearance: none;
-    background-color: #9E9E9E;
-    opacity: 0.7;
-    padding: 10px;
-    padding: 7px;
-    border-radius: 2px;
-    margin: 0px 3px 0px 12px;
+    background-color: gray;
+    margin: 0px 4px;
+    font: inherit;
+    width: 1em;
+    height: 1em;
+    outline: none;
+    border: none;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em)
+}
+
+.body .main_box form .checking div:nth-child(1) input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    background-color: red;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.body .main_box form .checking div:nth-child(1) input[type="checkbox"]:checked::before {
+    transform: scale(1);
 }
 
 .body .main_box form .checking div:nth-child(2) a {
@@ -141,9 +162,81 @@ body {
 .footer {
     margin: 100px 0px 0px 0px;
     background-color: rgba(0, 0, 0, .75);
-    padding: 20px 10%;
+    padding: 20px 14%;
 }
 
-.footer .footer_heading div:nth-child(1) p{
+.footer .footer_heading div {
+    color: #737373;
+    font-size: 14px;
+    display: flex;
+    margin: 10px 0px 15px 0px;
+}
 
+.footer .footer_heading div:nth-child(1) p a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer .footer_heading div:nth-child(1) p a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer_heading div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer .footer_heading div:nth-child(2) ul {
+    display: block;
+    margin: 10px 130px 10px 0px;
+    font-size: 12px;
+}
+
+.footer .footer_heading div:nth-child(2) ul li {
+    list-style-type: none;
+    margin: 0px 0px 20px 0px;
+}
+
+.footer .footer_heading div:nth-child(2) ul li a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.footer .footer_heading div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    background: transparent;
+}
+
+.footer .footer_heading div:nth-child(3) .select_group {
+    position: relative;
+    display: flex;
+    gap: 6px;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid #737373;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+.footer .footer_heading div:nth-child(3) .select_group i {
+    color: gray;
+    font-size: 15px;
+}
+
+.footer .footer_heading div:nth-child(3) .select_group select {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #737373;
+}
+
+.footer .footer_heading div:nth-child(3) .select_group select option {
+    background-color: black;
+    font-size: 12px;
 }
