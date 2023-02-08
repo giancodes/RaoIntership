@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header nav {
+    margin-top: 8px;
+    margin-left: 10px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    transition: .2s;
+}
+
+header nav .logo:hover {
+    box-shadow: 3px 3px 5px gray;
+    translate: -3px -3px;
+}
+
+header nav .logo img {
+    width: 40px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+header nav .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav .links div {
+    margin: 0px 10px;
+    padding: 10px 10px;
+    transition: .3s;
+}
+
+header nav .links div:hover {   
+    box-shadow: 3px 3px 5px gray;
+    translate: -3px -3px;
+}
+
+header nav .links div a {
+    color: black;
+    text-decoration: none;
+}
